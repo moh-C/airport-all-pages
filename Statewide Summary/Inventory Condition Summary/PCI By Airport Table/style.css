@@ -1193,6 +1193,11 @@ body {
   margin-right: 5px;
   text-decoration: none;
   transition: border-color 0.3s;
+  transition: font-weight 0.2s;
+}
+
+.breadcrumbs__crumb-anchor:hover {
+  font-weight: bold;
 }
 
 .breadcrumbs__crumb-separator {
@@ -1239,4 +1244,261 @@ body {
 .main__display-container ul:not([class]) li p,
 .main__display-container ol:not([class]) li p {
   margin-bottom: 10px;
+}
+
+.main__section-anchor:hover,
+.secondary-navigation__anchor:hover,
+.main__section-anchor:focus,
+.secondary-navigation__anchor:focus {
+  color: #fff;
+}
+
+.main__section-anchor--active,
+.secondary-navigation__anchor--active {
+  background-color: #333c4f;
+  color: #60d33f;
+}
+
+.secondary-navigation__chevron--expanded {
+  transform: translateY(-50%);
+}
+
+.smart-table {
+  margin-top: 15px;
+}
+
+.smart-table__controls {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2px;
+}
+
+.smart-table__skip-link {
+  background: #fff;
+  border: 2px solid #60d33f;
+  color: #181d28;
+  display: block;
+  margin: 5px 10px;
+  opacity: 0;
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: opacity 250ms, -webkit-transform 250ms;
+  transition: opacity 250ms, -webkit-transform 250ms;
+  transition: opacity 250ms, transform 250ms;
+  transition: opacity 250ms, transform 250ms, -webkit-transform 250ms;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.smart-table__table-container {
+  overflow-x: auto;
+}
+
+.smart-table__table-head {
+  margin-bottom: 0;
+  position: relative;
+}
+
+.smart-table__table-head,
+.smart-table__table-body {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  font-size: 12px;
+  margin: 10px 0;
+  max-width: 100%;
+}
+
+.smart-table__table-body-header,
+.smart-table__caption {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+.smart-table__table-head thead tr,
+.smart-table__table-body thead tr {
+  background-color: transparent;
+  position: relative;
+}
+
+.smart-table .smart-table__table-row {
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+}
+
+.smart-table__table-head tr,
+.smart-table__table-body tr {
+  background-color: #fff;
+}
+
+.smart-table__table-head thead tr th:not([class='no-header-styles']),
+.smart-table__table-body thead tr th:not([class='no-header-styles']) {
+  background-color: #eaeaec;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -2px;
+  z-index: 1;
+}
+
+.smart-table .smart-table__table-header {
+  padding: 20px 5px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.sort-arrows {
+  bottom: 3px;
+  left: 3px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+.sort-arrows__column-sort-arrow-up {
+  top: 2px;
+}
+
+.sort-arrows__column-sort-arrow-up,
+.sort-arrows__column-sort-arrow-down {
+  fill: #6f798c;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.sort-arrows__column-sort-arrow-down {
+  bottom: 2px;
+}
+
+.smart-table__table-head:after {
+  background-color: #b0b6c2;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: auto;
+  width: 100%;
+  z-index: 1;
+}
+
+.smart-table__table-body-wrapper {
+  display: block;
+  margin-top: -2px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.smart-table__table-head,
+.smart-table__table-body {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  font-size: 12px;
+  margin: 10px 0;
+  max-width: 100%;
+}
+
+.smart-table__table-head thead tr,
+.smart-table__table-body thead tr {
+  background-color: transparent;
+  position: relative;
+}
+
+.smart-table .smart-table__table-row {
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+}
+
+.smart-table__table-head tr,
+.smart-table__table-body tr {
+  background-color: #fff;
+}
+
+.smart-table__table-head thead tr th:not([class='no-header-styles']),
+.smart-table__table-body thead tr th:not([class='no-header-styles']) {
+  background-color: #eaeaec;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -2px;
+  z-index: 1;
+}
+
+.smart-table__table-head th,
+.smart-table__table-body th {
+  border: 1px solid #b0b6c2;
+}
+
+.smart-table .smart-table__body-row {
+  left: 0;
+  position: absolute;
+}
+
+.smart-table .smart-table__table-row {
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+}
+
+.smart-table__table-head tr,
+.smart-table__table-body tr {
+  background-color: #fff;
+}
+
+.smart-table .smart-table__table-cell--left {
+  text-align: right;
+}
+
+.smart-table .smart-table__table-cell {
+  height: 100%;
+}
+
+.smart-table__table-head td,
+.smart-table__table-body td {
+  border: 1px solid #b0b6c2;
+}
+
+table:not([class]) th,
+table:not([class]) td,
+table:not([class]) th.no-header-styles,
+.smart-table__table-head th,
+.smart-table__table-body th,
+.smart-table__table-head td,
+.smart-table__table-body td {
+  line-height: 1.25;
+  overflow: hidden;
+  padding: 10px 5px;
+}
+
+.smart-table .smart-table__table-cell--center {
+  text-align: center;
+}
+
+.smart-table .smart-table__table-cell {
+  height: 100%;
+}
+
+.smart-table__table-head td,
+.smart-table__table-body td {
+  border: 1px solid #b0b6c2;
+}
+
+table:not([class]) th,
+table:not([class]) td,
+table:not([class]) th.no-header-styles,
+.smart-table__table-head th,
+.smart-table__table-body th,
+.smart-table__table-head td,
+.smart-table__table-body td {
+  line-height: 1.25;
+  overflow: hidden;
+  padding: 10px 5px;
 }
