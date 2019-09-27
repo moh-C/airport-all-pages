@@ -1131,9 +1131,9 @@ body {
 .secondary-navigation__chevron {
   top: 50%;
   position: absolute;
-  transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-270deg);
   transition: all 0.3s;
-  right: 14px;
+  left: 14px;
   width: 12px;
 }
 
@@ -1216,8 +1216,8 @@ body {
 .main__display-container ul:not([class]) li,
 .main__display-container ol:not([class]) li {
   display: block;
-  margin-left: 20px;
-  padding-left: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
   position: relative;
 }
 
@@ -1226,7 +1226,7 @@ body {
   border-radius: 50%;
   content: '';
   height: 6px;
-  left: 0;
+  right: 0;
   top: 7.5px;
   width: 6px;
 }
