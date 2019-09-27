@@ -1136,3 +1136,107 @@ body {
   right: 14px;
   width: 12px;
 }
+
+.main__secondary-nav-and-display-container .main__secondary-nav-container,
+.main__secondary-nav-and-display-container .main__display-container {
+  height: calc(100vh - 50px);
+}
+
+@media (min-width: 1200px) {
+  .main__display-container {
+    width: calc(100vw - 300px);
+  }
+}
+
+@media (min-width: 800px) {
+  .main__display-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.main__display-container {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 0;
+  width: calc(100vw - 225px);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main__breadcrumb-container {
+  min-height: 65px;
+}
+
+.main__page-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  list-style: none inside;
+  padding: 17px 12px 11px;
+}
+
+.breadcrumbs__crumb {
+  position: relative;
+  white-space: nowrap;
+}
+
+.breadcrumbs__crumb-anchor {
+  border-bottom: 3px solid transparent;
+  color: #181d28;
+  margin-right: 5px;
+  text-decoration: none;
+  transition: border-color 0.3s;
+}
+
+.breadcrumbs__crumb-separator {
+  margin-right: 5px;
+}
+
+.breadcrumbs__crumb-current {
+  font-weight: 700;
+  border-bottom: 3px solid #60d33f;
+}
+
+.main__display-container p:not([class]) {
+  margin-bottom: 30px;
+}
+
+.main__display-container ul:not([class]),
+.main__display-container ol:not([class]) {
+  list-style: none inside;
+}
+
+.main__display-container ul:not([class]) li,
+.main__display-container ol:not([class]) li {
+  display: block;
+  margin-left: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.main__display-container ul:not([class]) li:before {
+  background-color: #181d28;
+  border-radius: 50%;
+  content: '';
+  height: 6px;
+  left: 0;
+  top: 7.5px;
+  width: 6px;
+}
+
+.main__display-container ul:not([class]) li:before,
+.main__display-container ol:not([class]) li:before {
+  position: absolute;
+}
+
+.main__display-container ul:not([class]) li p,
+.main__display-container ol:not([class]) li p {
+  margin-bottom: 10px;
+}
