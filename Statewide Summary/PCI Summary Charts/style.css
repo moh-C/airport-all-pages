@@ -1502,3 +1502,246 @@ table:not([class]) th.no-header-styles,
   overflow: hidden;
   padding: 10px 5px;
 }
+
+.column-chart {
+    border-bottom: 3px solid #d7d8de;
+}
+
+.column-chart[_ngcontent-c0] {
+  margin-bottom: 48px;
+  width: 95%;
+  padding-bottom: 48px;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  position: relative;
+}
+
+.column-chart__title[_ngcontent-c0] {
+  margin-bottom: 20px;
+}
+
+.column-chart__title[_ngcontent-c0] {
+  color: #181d28;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.column-chart__toggle-area[_ngcontent-c0] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.column-chart__container[_ngcontent-c0] {
+  margin-left: 3%;
+}
+
+.column-chart__comment[_ngcontent-c0] {
+  color: #808080;
+  margin-left: 3%;
+  margin-top: 25px;
+}
+
+.column-chart__comment[_ngcontent-c0] {
+  font-size: 14px;
+}
+
+.column-chart__toggle-button-group[_ngcontent-c0] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.column-chart__toggle-button-group__label--selected[_ngcontent-c0] {
+  background-color: #60d33f;
+}
+
+.column-chart__toggle-button-group__label[_ngcontent-c0] {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #eaeaec;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-width: 54px;
+  padding: 4px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.column-chart__toggle-button-group__label[_ngcontent-c0] {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #eaeaec;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-width: 54px;
+  padding: 4px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.column-chart__toggle-button-group__radio[_ngcontent-c0] {
+  cursor: inherit;
+  opacity: 0;
+  position: absolute;
+}
+
+.column-chart__figure[_ngcontent-c0] {
+  padding-top: 35px;
+}
+
+.column-chart__legend[_ngcontent-c0] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding-left: 30px;
+}
+
+.column-chart__visualization[_ngcontent-c0] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 650px;
+  max-height: 50vh;
+  padding-bottom: 55px;
+  position: relative;
+}
+
+.column-chart__y-axis[_ngcontent-c0] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 30px;
+  position: relative;
+  margin: -.5em 0 -.5em 0;
+}
+
+.column-chart__chart-area[_ngcontent-c0] {
+  border-left: 1px solid rgba(0,0,0,0.25);
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  position: relative;
+}
+
+.column-chart__y-axis-label[_ngcontent-c0] {
+  font-size: 14px;
+  font-weight: bold;
+  left: 0;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg) translateY(50%);
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg) translateY(50%);
+  white-space: nowrap;
+}
+
+.column-chart__gridline-label[_ngcontent-c0] {
+  font-size: 14px;
+  line-height: 1;
+  margin-right: 16px;
+  padding: 0 3px;
+  text-align: right;
+}
+
+.column-chart__column-group-container[_ngcontent-c0] {
+  z-index: 3;
+}
+
+.column-chart__column-group-container[_ngcontent-c0], .column-chart__x-underlay-container[_ngcontent-c0] {
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+group[_ngcontent-c0] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  padding: 0 1.5%;
+  position: relative;
+  z-index: 1;
+}
+
+.column-chart__column[_ngcontent-c0] {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.column-chart__column-bar[_ngcontent-c0], .column-chart__stacked-column-bar[_ngcontent-c0] {
+  bottom: 0;
+  left: 2px;
+  min-height: 2px;
+  position: absolute;
+  right: 2px;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  will-change: transform;
+}
+
+.column-chart__column-bar-image[_ngcontent-c0], .column-chart__stacked-column-bar-image[_ngcontent-c0] {
+  bottom: 0;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}

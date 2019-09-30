@@ -1,174 +1,176 @@
 <html lang="fa">
-   <head>
-      <title>سامانه پایش فرودگاه های کشور</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="icon" href="./favicon.ico" sizes="16x16">
-      <script src="./script.js"></script>
-      <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="./style.css">
-   </head>
-   <body dir="rtl">
-      <div class="preload">
-         <img id="airplane" src="./image/airplane-min.png" alt="airplane">
-         <img src="./image/Clouds.png" id="cloud1" alt="Clouds" class="cloud">
-         <img src="./image/Clouds.png" id="cloud2" alt="Clouds" class="cloud">
-         <img src="./image/Clouds.png" id="cloud3" alt="Clouds" class="cloud">
-         <h3 id="preloader-custom-text1">بارگزاری صفحه برای بار اول ممکن است طول بکشد</h3>
-      </div>
-      <script>
-         window.addEventListener('load', () => {
-             const preload = document.querySelector('.preload');
-             preload.classList.add('destoyed');
-         })
-      </script>
-      <header class="header">
-         <div class="header__sticky-wrapper header__sticky-wrapper--sticky">
+
+<head>
+    <title>سامانه پایش فرودگاه های کشور</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./favicon.ico" sizes="16x16">
+    <script src="./script.js"></script>
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body dir="rtl">
+    <div class="preload">
+        <img id="airplane" src="./image/airplane-min.png" alt="airplane">
+        <img src="./image/Clouds.png" id="cloud1" alt="Clouds" class="cloud">
+        <img src="./image/Clouds.png" id="cloud2" alt="Clouds" class="cloud">
+        <img src="./image/Clouds.png" id="cloud3" alt="Clouds" class="cloud">
+        <h3 id="preloader-custom-text1">بارگزاری صفحه برای بار اول ممکن است طول بکشد</h3>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            const preload = document.querySelector('.preload');
+            preload.classList.add('destoyed');
+        })
+    </script>
+    <header class="header">
+        <div class="header__sticky-wrapper header__sticky-wrapper--sticky">
             <div class="primary-navigation">
-               <div class="primary-navigation__item primary-navigation__item--home-item">
-                  <a class="primary-navigation__item-home-anchor" href="#">
+                <div class="primary-navigation__item primary-navigation__item--home-item">
+                    <a class="primary-navigation__item-home-anchor" href="#">
                      <svg class="primary-navigation__house-icon" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
                         <title>Home</title>
                         <path d="M14.965 7.413h-2.303v6.907H9.21V9.715H5.755v4.605H2.302V7.413H0L7.55 0l7.415 7.413" fill-rule="evenodd"></path>
                      </svg>
                   </a>
-               </div>
-               <div class="primary-navigation__content">
-                  <h2 class="primary-navigation__title">سامانه پایش سلامت <br>روسازی فرودگاه های کشور </h2>
-               </div>
-               <!-- End of Primary Navigation Content-->
-               <ul class="primary-navigation__list">
-                  <li class="primary-navigation__item js-primary-navigation-item">
-                     <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor primary-navigation__item-anchor--on-this-page" href="#">
+                </div>
+                <div class="primary-navigation__content">
+                    <h2 class="primary-navigation__title">سامانه پایش سلامت <br>روسازی فرودگاه های کشور </h2>
+                </div>
+                <!-- End of Primary Navigation Content-->
+                <ul class="primary-navigation__list">
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor primary-navigation__item-anchor--on-this-page" href="#">
                      <span>خلاصه مدیریتی</span>
                      </a>
-                     <div class="primary-navigation__submenu">
-                        <ul class="primary-navigation__submenu-list">
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">خلاصه مدیریتی انبار 1</a>
-                           </li>
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">خلاصه مدیریتی انبار 2</a>
-                           </li>
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">خلاصه مدیریتی انبار 3</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </li>
-                  <!--Statewide Summary Submenu-->
-                  <li class="primary-navigation__item js-primary-navigation-item">
-                     <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">خلاصه مدیریتی انبار 1</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">خلاصه مدیریتی انبار 2</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">خلاصه مدیریتی انبار 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Statewide Summary Submenu-->
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
                      <span>گزارش ها</span>
                      </a>
-                     <div class="primary-navigation__submenu">
-                        <ul class="primary-navigation__submenu-list">
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">گزارش ها 1</a>
-                           </li>
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">گزارش ها 2</a>
-                           </li>
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">گزارش ها 3</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </li>
-                  <!--Airport Details Submenu-->
-                  <li class="primary-navigation__item js-primary-navigation-item">
-                     <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">گزارش ها 1</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">گزارش ها 2</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">گزارش ها 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Airport Details Submenu-->
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
                      <span>وضعیت روسازی</span>
                      </a>
-                     <div class="primary-navigation__submenu">
-                        <ul class="primary-navigation__submenu-list">
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">وضعیت روسازی 1</a>
-                           </li>
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">وضعیت روسازی 2</a>
-                           </li>
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">وضعیت روسازی 3</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </li>
-                  <!--Maintenance Guidelines Submenu-->
-                  <li class="primary-navigation__item js-primary-navigation-item">
-                     <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">وضعیت روسازی 1</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">وضعیت روسازی 2</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">وضعیت روسازی 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Maintenance Guidelines Submenu-->
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
                      <span>دستورالعمل تعمیر و نگهداری</span>
                      </a>
-                     <div class="primary-navigation__submenu">
-                        <ul class="primary-navigation__submenu-list">
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل تعمیر و نگهداری 1</a>
-                           </li>
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل تعمیر و نگهداری 2</a>
-                           </li>
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل تعمیر و نگهداری 3</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </li>
-                  <!--Pavement Inspection Submenu-->
-                  <li class="primary-navigation__item js-primary-navigation-item">
-                     <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل تعمیر و نگهداری 1</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل تعمیر و نگهداری 2</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل تعمیر و نگهداری 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Pavement Inspection Submenu-->
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
                      <span>دستورالعمل ارزیابی روسازی</span>
                      </a>
-                     <div class="primary-navigation__submenu">
-                        <ul class="primary-navigation__submenu-list">
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل ارزیابی روسازی 1</a>
-                           </li>
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل ارزیابی روسازی 2</a>
-                           </li>
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل ارزیابی روسازی 3</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </li>
-                  <li class="primary-navigation__item js-primary-navigation-item">
-                     <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل ارزیابی روسازی 1</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل ارزیابی روسازی 2</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل ارزیابی روسازی 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
                      <span>متفرقه</span>
                      </a>
-                     <div class="primary-navigation__submenu">
-                        <ul class="primary-navigation__submenu-list">
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">متفرقه 1</a>
-                           </li>
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">متفرقه 2</a>
-                           </li>
-                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
-                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">متفرقه 3</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </li>
-                  <!-- Miscellaneous Submenu -->
-               </ul>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">متفرقه 1</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">متفرقه 2</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">متفرقه 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Miscellaneous Submenu -->
+                </ul>
             </div>
             <!--Primary Navigation-->
-         </div>
-         <!--header__sticky-wrapper-->
-      </header>
-      <!-- Header -->
-      <div class="main__secondary-nav-and-display-container ">
-         <div class="main__secondary-nav-container" aria-label="Statewide Summary navigation">
+        </div>
+        <!--header__sticky-wrapper-->
+    </header>
+    <!-- Header -->
+    <div class="main__secondary-nav-and-display-container ">
+        <div class="main__secondary-nav-container" aria-label="Statewide Summary navigation">
             <h2 class="main__section-title">
-               <a class="main__section-anchor" href="#">
-                  <div class="main__section-title-text">خلاصه مدیریتی</div>
-               </a>
+                <a class="main__section-anchor" href="#">
+                    <div class="main__section-title-text">خلاصه مدیریتی</div>
+                </a>
             </h2>
             <div class="secondary-navigation">
-               <ul class="secondary-navigation__list">
-                  <li>
-                     <a href="#" class="secondary-navigation__anchor">
+                <ul class="secondary-navigation__list">
+                    <li>
+                        <a href="#" class="secondary-navigation__anchor">
                         خلاصه منطقه موجودی
                         <svg class="secondary-navigation__chevron" width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                            <title>Chevron</title>
@@ -178,9 +180,9 @@
                            </g>
                         </svg>
                      </a>
-                  </li>
-                  <li>
-                     <a href="#" class="secondary-navigation__anchor">
+                    </li>
+                    <li>
+                        <a href="#" class="secondary-navigation__anchor">
                         خلاصه سن موجودی
                         <svg class="secondary-navigation__chevron" width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                            <title>Chevron</title>
@@ -190,9 +192,9 @@
                            </g>
                         </svg>
                      </a>
-                  </li>
-                  <li>
-                     <a href="#" class="secondary-navigation__anchor">
+                    </li>
+                    <li>
+                        <a href="#" class="secondary-navigation__anchor">
                         خلاصه وضعیت موجودی
                         <svg class="secondary-navigation__chevron secondary-navigation__chevron--expanded" width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                            <title>Chevron</title>
@@ -202,214 +204,503 @@
                            </g>
                         </svg>
                      </a>
-                     <div class="secondary-navigation__sub-links">
-                        <div class="secondary-navigation">
-                           <ul class="secondary-navigation__list">
-                              <li>
-                                 <a href="#" class="secondary-navigation__anchor">نمودارهای خلاصه PCI در سراسر کشور</a>
-                              </li>
-                              <li>
-                                 <a href="#" class="secondary-navigation__anchor secondary-navigation__anchor--active">PCI توسط جدول فرودگاه</a>
-                              </li>
-                           </ul>
+                        <div class="secondary-navigation__sub-links">
+                            <div class="secondary-navigation">
+                                <ul class="secondary-navigation__list">
+                                    <li>
+                                        <a href="#" class="secondary-navigation__anchor">نمودارهای خلاصه PCI در سراسر کشور</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="secondary-navigation__anchor secondary-navigation__anchor--active">PCI توسط جدول فرودگاه</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                     </div>
-                  </li>
-                  <li>
-                     <a href="#" class="secondary-navigation__anchor">گزارش خلاصه عملکرد اجرایی سال 2019</a>
-                  </li>
-               </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="secondary-navigation__anchor">گزارش خلاصه عملکرد اجرایی سال 2019</a>
+                    </li>
+                </ul>
             </div>
-         </div>
-         <div class="main__display-container ">
+        </div>
+        <div class="main__display-container ">
             <div class="main__display-container-inner">
-               <div class="main__breadcrumb-container">
-                  <ul class="breadcrumbs" aria-label="Breadcrumbs">
-                     <li class="breadcrumbs__crumb">
-                        <a class="breadcrumbs__crumb-anchor" href="../../index.html">
-                        سامانه حمل و نقل هوایی
-                        </a>
-                        <span class="breadcrumbs__crumb-separator">/</span>
-                     </li>
-                     <li class="breadcrumbs__crumb">
-                        <a class="breadcrumbs__crumb-anchor" href="../../statewide-summary\_statewide-sum-main.html">
-                        خلاصه مدیریتی
-                        </a>
-                        <span class="breadcrumbs__crumb-separator">/</span>
-                     </li>
-                     <li class="breadcrumbs__crumb">
-                        <a class="breadcrumbs__crumb-anchor" href="../../statewide-summary\condition-summary\_inv-cond-sum-main.html">
-                        خلاصه وضعیت موجودی
-                        </a>
-                        <span class="breadcrumbs__crumb-separator">/</span>
-                     </li>
-                     <li class="breadcrumbs__crumb" aria-labelledby="breadcrumbs">
-                        <span class="breadcrumbs__crumb-current">
-                        PCI توسط جدول فرودگاه
-                        </span>
-                     </li>
-                  </ul>
-               </div>
-               <h1 class="main__page-title ">PCI توسط جدول فرودگاه</h1>
-               <aptech-toolbox>
-                  <p style="margin-bottom: 10px">در جدول زیر کلیه PCI با وزن مخصوص منطقه برای هر فرودگاه ارائه شده است.</p>
-                  <smart-table configpath="table-data/pci-by-airport.json">
-                     <span class="smart-table">
-                        <a aria-label="Skip Table" class="smart-table__skip-link" href="#">Skip Table</a>
-                        <div class="smart-table__table-container">
-                           <table aria-readonly="true" class="smart-table__table-head" summary="Data is organized in single columns and is sortable ascending or descending" tabindex="0" aria-label="A table showing area-weighted PCI by airport.">
-                              <caption class="smart-table__caption">A table showing area-weighted PCI by airport.</caption>
-                              
-                              <thead class="smart-table__head">
-                                 <tr class="smart-table__table-row smart-table__table-header-row">
-                                    <th class="smart-table__table-header" role="columnheader" scope="col" tabindex="0" id="column-header-name-id-xtpu" aria-sort="none" title="Airport Name" aria-label="Airport Name" style="max-width: 270px; min-width: 270px; white-space: normal;">
-                                       <div class="smart-table__table-header-content">
-                                          <span class="smart-table__table-header-text">Airport Name</span>
-                                          <!---->
-                                          <sort-arrows _nghost-c2="">
-                                             <div _ngcontent-c2="" class="sort-arrows" role="button" tabindex="0" aria-label="Click to sort Airport Name in ascending order">
-                                                <svg _ngcontent-c2="" class="sort-arrows__column-sort-arrow-up" focusable="false" height="7" viewBox="0 0 18 7" width="18">
-                                                   <polygon _ngcontent-c2="" points="0,7 18,7 9,0"></polygon>
-                                                </svg>
-                                                <svg _ngcontent-c2="" class="sort-arrows__column-sort-arrow-down" focusable="false" height="7" viewBox="0 0 18 7" width="18">
-                                                   <polygon _ngcontent-c2="" points="0,0 18,0 9,7"></polygon>
-                                                </svg>
-                                             </div>
-                                          </sort-arrows>
-                                       </div>
-                                    </th>
-                                    <!---->
-                                    <!---->
-                                    <th class="smart-table__table-header" role="columnheader" scope="col" tabindex="0" id="column-header-code-id-149py" aria-sort="none" title="Network ID" aria-label="Network ID" style="max-width: 100px; min-width: 100px; white-space: normal;">
-                                       <div class="smart-table__table-header-content">
-                                          <span class="smart-table__table-header-text">Network ID</span>
-                                          <!---->
-                                          <sort-arrows _nghost-c2="">
-                                             <div _ngcontent-c2="" class="sort-arrows" role="button" tabindex="0" aria-label="Click to sort Network ID in ascending order">
-                                                <svg _ngcontent-c2="" class="sort-arrows__column-sort-arrow-up" focusable="false" height="7" viewBox="0 0 18 7" width="18">
-                                                   <polygon _ngcontent-c2="" points="0,7 18,7 9,0"></polygon>
-                                                </svg>
-                                                <svg _ngcontent-c2="" class="sort-arrows__column-sort-arrow-down" focusable="false" height="7" viewBox="0 0 18 7" width="18">
-                                                   <polygon _ngcontent-c2="" points="0,0 18,0 9,7"></polygon>
-                                                </svg>
-                                             </div>
-                                          </sort-arrows>
-                                       </div>
-                                    </th>
-                                    <!---->
-                                    <!---->
-                                    <th class="smart-table__table-header" role="columnheader" scope="col" tabindex="0" id="column-header-pci-id-274vs" aria-sort="none" title="Area-Weighted PCI" aria-label="Area-Weighted PCI" style="max-width: 105px; min-width: 105px; white-space: normal;">
-                                       <div class="smart-table__table-header-content">
-                                          <span class="smart-table__table-header-text">Area-Weighted PCI</span>
-                                          <!---->
-                                          <sort-arrows _nghost-c2="">
-                                             <div _ngcontent-c2="" class="sort-arrows" role="button" tabindex="0" aria-label="Click to sort Area-Weighted PCI in descending order">
-                                                <svg _ngcontent-c2="" class="sort-arrows__column-sort-arrow-up" focusable="false" height="7" viewBox="0 0 18 7" width="18">
-                                                   <polygon _ngcontent-c2="" points="0,7 18,7 9,0"></polygon>
-                                                </svg>
-                                                <svg _ngcontent-c2="" class="sort-arrows__column-sort-arrow-down" focusable="false" height="7" viewBox="0 0 18 7" width="18">
-                                                   <polygon _ngcontent-c2="" points="0,0 18,0 9,7"></polygon>
-                                                </svg>
-                                             </div>
-                                          </sort-arrows>
-                                       </div>
-                                    </th>
-                                    <!---->
-                                    <!---->
-                                    <th class="smart-table__table-header" role="columnheader" scope="col" tabindex="0" id="column-header-inspection-yr-id-2a64a" aria-sort="none" title="Inspection Year" aria-label="Inspection Year" style="max-width: 110px; min-width: 110px; white-space: normal;">
-                                       <div class="smart-table__table-header-content">
-                                          <span class="smart-table__table-header-text">Inspection Year</span>
-                                          <!---->
-                                          <sort-arrows _nghost-c2="">
-                                             <div _ngcontent-c2="" class="sort-arrows" role="button" tabindex="0" aria-label="Click to sort Inspection Year in descending order">
-                                                <svg _ngcontent-c2="" class="sort-arrows__column-sort-arrow-up" focusable="false" height="7" viewBox="0 0 18 7" width="18">
-                                                   <polygon _ngcontent-c2="" points="0,7 18,7 9,0"></polygon>
-                                                </svg>
-                                                <svg _ngcontent-c2="" class="sort-arrows__column-sort-arrow-down" focusable="false" height="7" viewBox="0 0 18 7" width="18">
-                                                   <polygon _ngcontent-c2="" points="0,0 18,0 9,7"></polygon>
-                                                </svg>
-                                             </div>
-                                          </sort-arrows>
-                                       </div>
-                                    </th>
-                                 </tr>
-                              </thead>
-                           </table>
-                           <div class="smart-table__table-body-wrapper" style="max-height: calc(100vh - 320px); width: 602px;">
-                              <table aria-readonly="true" class="smart-table__table-body" tabindex="0" id="smart-table-id-3adx" style="height: 2304px;">
-                                 <thead class="smart-table__table-body-head">
-                                    <tr class="smart-table__table-row">
-                                       <!---->
-                                       <th class="smart-table__table-body-header" role="columnheader" scope="col" tabindex="0">
-                                          Airport Name
-                                       </th>
-                                       <th class="smart-table__table-body-header" role="columnheader" scope="col" tabindex="0">
-                                          Network ID
-                                       </th>
-                                       <th class="smart-table__table-body-header" role="columnheader" scope="col" tabindex="0">
-                                          Area-Weighted PCI
-                                       </th>
-                                       <th class="smart-table__table-body-header" role="columnheader" scope="col" tabindex="0">
-                                          Inspection Year
-                                       </th>
-                                    </tr>
-                                 </thead>
-                                 <tbody>
-                                    <!---->
-                                    <tr class="smart-table__table-row smart-table__body-row" role="link" id="id-fp7c" data-index="0" style="top: 0px;">
-                                       <!---->
-                                       <td class="smart-table__table-cell column-key-name smart-table__table-cell--left" tabindex="0" aria-describedby="column-header-name-id-xtpu" style="max-width: 270px; min-width: 270px;">
-                                          Anderson Municipal
-                                       </td>
-                                       <td class="smart-table__table-cell column-key-code smart-table__table-cell--center" tabindex="0" aria-describedby="column-header-code-id-149py" style="max-width: 100px; min-width: 100px;">
-                                          AID
-                                       </td>
-                                       <td class="smart-table__table-cell column-key-pci smart-table__table-cell--center" tabindex="0" aria-describedby="column-header-pci-id-274vs" style="max-width: 105px; min-width: 105px;">
-                                          74
-                                       </td>
-                                       <td class="smart-table__table-cell column-key-inspection-yr smart-table__table-cell--center" tabindex="0" aria-describedby="column-header-inspection-yr-id-2a64a" style="max-width: 110px; min-width: 110px;">
-                                          2016
-                                       </td>
-                                    </tr>
-                                    <tr class="smart-table__table-row smart-table__body-row" role="link" id="id-27vw9" data-index="1" style="top: 36px;">
-                                       <!---->
-                                       <td class="smart-table__table-cell column-key-name smart-table__table-cell--left" tabindex="0" aria-describedby="column-header-name-id-xtpu" style="max-width: 270px; min-width: 270px;">
-                                          Angola - Tri-State Steuben County
-                                       </td>
-                                       <td class="smart-table__table-cell column-key-code smart-table__table-cell--center" tabindex="0" aria-describedby="column-header-code-id-149py" style="max-width: 100px; min-width: 100px;">
-                                          ANQ
-                                       </td>
-                                       <td class="smart-table__table-cell column-key-pci smart-table__table-cell--center" tabindex="0" aria-describedby="column-header-pci-id-274vs" style="max-width: 105px; min-width: 105px;">
-                                          66
-                                       </td>
-                                       <td class="smart-table__table-cell column-key-inspection-yr smart-table__table-cell--center" tabindex="0" aria-describedby="column-header-inspection-yr-id-2a64a" style="max-width: 110px; min-width: 110px;">
-                                          2017
-                                       </td>
-                                    </tr>
-                                    <tr class="smart-table__table-row smart-table__body-row" role="link" id="id-365s8" data-index="2" style="top: 72px;">
-                                       <!---->
-                                       <td class="smart-table__table-cell column-key-name smart-table__table-cell--left" tabindex="0" aria-describedby="column-header-name-id-xtpu" style="max-width: 270px; min-width: 270px;">
-                                          Auburn - DeKalb County
-                                       </td>
-                                       <td class="smart-table__table-cell column-key-code smart-table__table-cell--center" tabindex="0" aria-describedby="column-header-code-id-149py" style="max-width: 100px; min-width: 100px;">
-                                          GWB
-                                       </td>
-                                       <td class="smart-table__table-cell column-key-pci smart-table__table-cell--center" tabindex="0" aria-describedby="column-header-pci-id-274vs" style="max-width: 105px; min-width: 105px;">
-                                          62
-                                       </td>
-                                       <td class="smart-table__table-cell column-key-inspection-yr smart-table__table-cell--center" tabindex="0" aria-describedby="column-header-inspection-yr-id-2a64a" style="max-width: 110px; min-width: 110px;">
-                                          2016
-                                       </td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                        </div>
-                     </span>
-                  </smart-table>
-               </aptech-toolbox>
+
+
+
+                <div class="main__breadcrumb-container">
+                    <ul class="breadcrumbs" aria-label="Breadcrumbs">
+                        <li class="breadcrumbs__crumb">
+                            <a class="breadcrumbs__crumb-anchor" href="../../index.html">
+                Indiana 2018 IDEA
+            </a>
+                            <span class="breadcrumbs__crumb-separator">/</span>
+                        </li>
+
+
+                        <li class="breadcrumbs__crumb">
+                            <a class="breadcrumbs__crumb-anchor" href="../../statewide-summary\_statewide-sum-main.html">
+                    Statewide Summary
+                </a>
+                            <span class="breadcrumbs__crumb-separator">/</span>
+                        </li>
+
+                        <li class="breadcrumbs__crumb">
+                            <a class="breadcrumbs__crumb-anchor" href="../../statewide-summary\condition-summary\_inv-cond-sum-main.html">
+                    Inventory Condition Summary
+                </a>
+                            <span class="breadcrumbs__crumb-separator">/</span>
+                        </li>
+
+
+                        <li class="breadcrumbs__crumb" aria-labelledby="breadcrumbs">
+                            <span class="breadcrumbs__crumb-current">
+                
+                    Statewide PCI Summary Charts
+                
             </span>
-         </div>
-      </div>
-   </body>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <h1 class="main__page-title ">Statewide PCI Summary Charts</h1>
+
+
+
+                <aptech-toolbox ng-version="5.2.11">
+                    <column-chart configpath="chart-data/statewide-pci-by-branch-use.json" id="idea-chart-1" _nghost-c0="">
+                        <div class="column-chart">
+                            <!---->
+                            <h2 class="column-chart__title" id="column-chart-title-id-4poqt">Area-Weighted PCI by Branch Use</h2>
+                            <div class="column-chart__toggle-area">
+                                <div class="column-chart__toggle-button-group" role="radiogroup" aria-label="Toggle for Area-Weighted PCI by Branch Use">
+                                    <label class="column-chart__toggle-button-group__label column-chart__toggle-button-group__label--selected">
+
+            <input class="column-chart__toggle-button-group__radio ng-untouched ng-pristine ng-valid" role="radio" type="radio" value="chart" aria-checked="true" aria-label="Area-Weighted PCI by Branch Use Show Chart">
+            <div class="column-chart__toggle-button-group__label-text">Chart</div>
+        </label>
+                                    <label class="column-chart__toggle-button-group__label">
+
+            <input class="column-chart__toggle-button-group__radio ng-untouched ng-pristine ng-valid" role="radio" type="radio" value="both" aria-checked="false" aria-label="Area-Weighted PCI by Branch Use Show Both">
+            <div class="column-chart__toggle-button-group__label-text">Both</div>
+        </label>
+                                    <label class="column-chart__toggle-button-group__label">
+
+            <input class="column-chart__toggle-button-group__radio ng-untouched ng-pristine ng-valid" role="radio" type="radio" value="table" aria-checked="false" aria-label="Area-Weighted PCI by Branch Use Show Table">
+            <div class="column-chart__toggle-button-group__label-text">Table</div>
+        </label>
+                                </div>
+                            </div>
+                            <div class="column-chart__container">
+                                <!---->
+                                <figure class="column-chart__figure">
+                                    <div class="column-chart__visualization">
+                                        <div aria-hidden="true" class="column-chart__y-axis">
+                                            <div class="column-chart__y-axis-label">Area-Weighted PCI</div>
+                                            <!---->
+                                            <div class="column-chart__gridline-label" style="bottom: 0%;">
+                                                <span>0</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 10%;">
+                                                <span>10</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 20%;">
+                                                <span>20</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 30%;">
+                                                <span>30</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 40%;">
+                                                <span>40</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 50%;">
+                                                <span>50</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 60%;">
+                                                <span>60</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 70%;">
+                                                <span>70</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 80%;">
+                                                <span>80</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 90%;">
+                                                <span>90</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 100%;">
+                                                <span>100</span>
+                                            </div>
+                                        </div>
+                                        <div class="column-chart__chart-area">
+                                            <div class="column-chart__column-group-container">
+                                                <!---->
+                                                <div class="column-chart__column-group">
+                                                    <!---->
+                                                    <!---->
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="column-chart__column">
+                                                        <div class="column-chart__column-bar column-chart__column-bar--first-column" role="tooltip" tabindex="0" aria-label="Branch Use. Runway. Area-Weighted PCI 75" style="height: 75%;">
+                                                            <svg class="column-chart__column-bar-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                            <rect height="1" width="1" fill="#005daa"></rect>
+                                        </svg>
+                                                            <label aria-hidden="true" class="column-chart__column-value">75</label>
+                                                        </div>
+                                                        <!---->
+                                                        <div aria-hidden="true" class="column-chart__column-label column-chart__column-label--first-column">
+                                                            Runway
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+
+
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="column-chart__column">
+                                                        <div class="column-chart__column-bar" role="tooltip" tabindex="0" aria-label="Branch Use. Taxiway. Area-Weighted PCI 72" style="height: 72%;">
+                                                            <svg class="column-chart__column-bar-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                            <rect height="1" width="1" fill="#00acfd"></rect>
+                                        </svg>
+                                                            <label aria-hidden="true" class="column-chart__column-value">72</label>
+                                                        </div>
+                                                        <!---->
+                                                        <div aria-hidden="true" class="column-chart__column-label">
+                                                            Taxiway
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+
+
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="column-chart__column">
+                                                        <div class="column-chart__column-bar" role="tooltip" tabindex="0" aria-label="Branch Use. Apron. Area-Weighted PCI 69" style="height: 69%;">
+                                                            <svg class="column-chart__column-bar-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                            <rect height="1" width="1" fill="#d4da89"></rect>
+                                        </svg>
+                                                            <label aria-hidden="true" class="column-chart__column-value">69</label>
+                                                        </div>
+                                                        <!---->
+                                                        <div aria-hidden="true" class="column-chart__column-label">
+                                                            Apron
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+
+
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="column-chart__column">
+                                                        <div class="column-chart__column-bar column-chart__column-bar--last-column" role="tooltip" tabindex="0" aria-label="Branch Use. T-hangar. Area-Weighted PCI 74" style="height: 74%;">
+                                                            <svg class="column-chart__column-bar-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                            <rect height="1" width="1" fill="#669f66"></rect>
+                                        </svg>
+                                                            <label aria-hidden="true" class="column-chart__column-value">74</label>
+                                                        </div>
+                                                        <!---->
+                                                        <div aria-hidden="true" class="column-chart__column-label column-chart__column-label--last-column">
+                                                            T-hangar
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+
+
+                                                    <div class="column-chart__column-group-separator">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                            <!---->
+                                            <div class="column-chart__gridline" style="bottom: 0%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 10%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 20%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 30%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 40%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 50%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 60%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 70%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 80%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 90%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 100%;">
+                                            </div>
+                                            <!---->
+                                            <div aria-hidden="true" class="column-chart__x-axis-label">Branch Use</div>
+
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </figure>
+                                <!---->
+                                <div class="column-chart__legend">
+                                    <!---->
+                                    <div class="column-chart__legend-swatch">
+                                        <span class="column-chart__swatch" style="background-color: rgb(0, 93, 170);">
+                        </span>
+                                        <span class="column-chart__swatch-label">
+                            Runway
+                        </span>
+                                    </div>
+
+                                    <div class="column-chart__legend-swatch">
+                                        <span class="column-chart__swatch" style="background-color: rgb(0, 172, 253);">
+                        </span>
+                                        <span class="column-chart__swatch-label">
+                            Taxiway
+                        </span>
+                                    </div>
+
+                                    <div class="column-chart__legend-swatch">
+                                        <span class="column-chart__swatch" style="background-color: rgb(212, 218, 137);">
+                        </span>
+                                        <span class="column-chart__swatch-label">
+                            Apron
+                        </span>
+                                    </div>
+
+                                    <div class="column-chart__legend-swatch">
+                                        <span class="column-chart__swatch" style="background-color: rgb(102, 159, 102);">
+                        </span>
+                                        <span class="column-chart__swatch-label">
+                            T-hangar
+                        </span>
+                                    </div>
+
+                                </div>
+                                <!---->
+
+                            </div>
+                            <div class="column-chart__comment">Note: this data represents the system inventory and condition at the time that each airport in the system was last inspected. Changes to this data may have occurred since that time and will be updated the next time each airport is inspected.</div>
+                        </div>
+                    </column-chart>
+                    <column-chart configpath="chart-data/statewide-pci-by-surface.json" id="idea-chart-2" _nghost-c0="">
+                        <div class="column-chart">
+                            <!---->
+                            <h2 class="column-chart__title" id="column-chart-title-id-2s4w7">Area-Weighted PCI by Surface Type</h2>
+                            <div class="column-chart__toggle-area">
+                                <div class="column-chart__toggle-button-group" role="radiogroup" aria-label="Toggle for Area-Weighted PCI by Surface Type">
+                                    <label class="column-chart__toggle-button-group__label column-chart__toggle-button-group__label--selected">
+
+            <input class="column-chart__toggle-button-group__radio ng-untouched ng-pristine ng-valid" role="radio" type="radio" value="chart" aria-checked="true" aria-label="Area-Weighted PCI by Surface Type Show Chart">
+            <div class="column-chart__toggle-button-group__label-text">Chart</div>
+        </label>
+                                    <label class="column-chart__toggle-button-group__label">
+
+            <input class="column-chart__toggle-button-group__radio ng-untouched ng-pristine ng-valid" role="radio" type="radio" value="both" aria-checked="false" aria-label="Area-Weighted PCI by Surface Type Show Both">
+            <div class="column-chart__toggle-button-group__label-text">Both</div>
+        </label>
+                                    <label class="column-chart__toggle-button-group__label">
+
+            <input class="column-chart__toggle-button-group__radio ng-untouched ng-pristine ng-valid" role="radio" type="radio" value="table" aria-checked="false" aria-label="Area-Weighted PCI by Surface Type Show Table">
+            <div class="column-chart__toggle-button-group__label-text">Table</div>
+        </label>
+                                </div>
+                            </div>
+                            <div class="column-chart__container">
+                                <!---->
+                                <figure class="column-chart__figure">
+                                    <div class="column-chart__visualization">
+                                        <div aria-hidden="true" class="column-chart__y-axis">
+                                            <div class="column-chart__y-axis-label">Area-Weighted PCI</div>
+                                            <!---->
+                                            <div class="column-chart__gridline-label" style="bottom: 0%;">
+                                                <span>0</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 10%;">
+                                                <span>10</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 20%;">
+                                                <span>20</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 30%;">
+                                                <span>30</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 40%;">
+                                                <span>40</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 50%;">
+                                                <span>50</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 60%;">
+                                                <span>60</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 70%;">
+                                                <span>70</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 80%;">
+                                                <span>80</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 90%;">
+                                                <span>90</span>
+                                            </div>
+                                            <div class="column-chart__gridline-label" style="bottom: 100%;">
+                                                <span>100</span>
+                                            </div>
+                                        </div>
+                                        <div class="column-chart__chart-area">
+                                            <div class="column-chart__column-group-container">
+                                                <!---->
+                                                <div class="column-chart__column-group">
+                                                    <!---->
+                                                    <!---->
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="column-chart__column">
+                                                        <div class="column-chart__column-bar column-chart__column-bar--first-column" role="tooltip" tabindex="0" aria-label="Surface Type. AAC. Area-Weighted PCI 73" style="height: 73%;">
+                                                            <svg class="column-chart__column-bar-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                            <rect height="1" width="1" fill="#00acfd"></rect>
+                                        </svg>
+                                                            <label aria-hidden="true" class="column-chart__column-value">73</label>
+                                                        </div>
+                                                        <!---->
+                                                        <div aria-hidden="true" class="column-chart__column-label column-chart__column-label--first-column">
+                                                            AAC
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+
+
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="column-chart__column">
+                                                        <div class="column-chart__column-bar" role="tooltip" tabindex="0" aria-label="Surface Type. AC. Area-Weighted PCI 67" style="height: 67%;">
+                                                            <svg class="column-chart__column-bar-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                               <rect height="1" width="1" fill="#005daa"></rect>
+                                                            </svg>
+                                                            <label aria-hidden="true" class="column-chart__column-value">67</label>
+                                                        </div>
+                                                        <!---->
+                                                        <div aria-hidden="true" class="column-chart__column-label">
+                                                            AC
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+
+
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="column-chart__column">
+                                                        <div class="column-chart__column-bar" role="tooltip" tabindex="0" aria-label="Surface Type. APC. Area-Weighted PCI 66" style="height: 66%;">
+                                                            <svg class="column-chart__column-bar-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                               <rect height="1" width="1" fill="#d4da89"></rect>
+                                                            </svg>
+                                                            <label aria-hidden="true" class="column-chart__column-value">66</label>
+                                                        </div>
+                                                        <!---->
+                                                        <div aria-hidden="true" class="column-chart__column-label">
+                                                            APC
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+
+
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="column-chart__column">
+                                                        <div class="column-chart__column-bar column-chart__column-bar--last-column" role="tooltip" tabindex="0" aria-label="Surface Type. PCC. Area-Weighted PCI 83" style="height: 83%;">
+                                                            <svg class="column-chart__column-bar-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                               <rect height="1" width="1" fill="#669f66"></rect>
+                                                            </svg>
+                                                            <label aria-hidden="true" class="column-chart__column-value">83</label>
+                                                        </div>
+                                                        <!---->
+                                                        <div aria-hidden="true" class="column-chart__column-label column-chart__column-label--last-column">
+                                                            PCC
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+
+
+                                                    <div class="column-chart__column-group-separator">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                            <!---->
+                                            <div class="column-chart__gridline" style="bottom: 0%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 10%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 20%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 30%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 40%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 50%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 60%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 70%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 80%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 90%;">
+                                            </div>
+                                            <div class="column-chart__gridline" style="bottom: 100%;">
+                                            </div>
+                                            <!---->
+                                            <div aria-hidden="true" class="column-chart__x-axis-label">Surface Type</div>
+
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </figure>
+                                <!---->
+                                <div class="column-chart__legend">
+                                    <!---->
+                                    <div class="column-chart__legend-swatch">
+                                        <span class="column-chart__swatch" style="background-color: rgb(0, 172, 253);">
+                        </span>
+                                        <span class="column-chart__swatch-label">
+                            AAC
+                        </span>
+                                    </div>
+
+                                    <div class="column-chart__legend-swatch">
+                                        <span class="column-chart__swatch" style="background-color: rgb(0, 93, 170);">
+                        </span>
+                                        <span class="column-chart__swatch-label">
+                            AC
+                        </span>
+                                    </div>
+
+                                    <div class="column-chart__legend-swatch">
+                                        <span class="column-chart__swatch" style="background-color: rgb(212, 218, 137);">
+                        </span>
+                                        <span class="column-chart__swatch-label">
+                            APC
+                        </span>
+                                    </div>
+                                    <div class="column-chart__legend-swatch">
+                                        <span class="column-chart__swatch" style="background-color: rgb(102, 159, 102);"></span>
+                                        <span class="column-chart__swatch-label">PCC</span>
+                                    </div>
+                                </div>
+                                <!---->
+
+                            </div>
+                            <div class="column-chart__comment">Note: this data represents the system inventory and condition at the time that each airport in the system was last inspected. Changes to this data may have occurred since that time and will be updated the next time each airport is inspected.</div>
+                        </div>
+                    </column-chart>
+                </aptech-toolbox>
+
+
+            </div>
+        </div>
+</body>
+
 </html>
